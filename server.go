@@ -40,7 +40,7 @@ func Handler(response http.ResponseWriter, request *http.Request) {
 func APIHandler(response http.ResponseWriter, request *http.Request) {
 
 	//Connect to database
-	db, e := sql.Open("mysql", "username:password@tcp(localhost:3306)/farm")
+	db, e := sql.Open("mysql", "root@tcp(localhost:3306)/farm")
 	if e != nil {
 		fmt.Print(e)
 	}
